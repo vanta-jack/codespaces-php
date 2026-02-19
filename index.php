@@ -14,13 +14,37 @@ function sayHello($name) {
 <html>
 	<head>
 		<title>Visual Studio Code Remote :: PHP</title>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<h1>Test</h1>
-		<?php 
-		
+		<h1>Forms Test</h1>
+		<div>
+		<?php
 		sayHello('remote world');
-			
 		?>
+		</div>
+		<div class = "form-container">
+			<h2>Sign Up</h2>
+			<form method="POST" action="">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<br><br>
+				
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<br><br>
+				
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required>
+				<br><br>
+				
+				<label for="confirm_password">Confirm Password:</label>
+				<input type="password" id="confirm_password" name="confirm_password" required>
+				<br><br>
+				
+				<button type="submit">Sign Up</button>
+			</form>
+		</div>
+
 	</body>
 </html>
