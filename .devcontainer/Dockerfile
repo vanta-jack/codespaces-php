@@ -14,6 +14,9 @@ RUN rm -f /etc/apt/sources.list.d/yarn.list \
     && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends mariadb-server mariadb-client \
     && apt-get clean -y \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    # install mysqli driver for PHP
+    && docker-php-ext-install mysqli pdo_mysql \
+    && docker-php-ext-enable mysqli pdo_mysql
 # [Optional] Uncomment this line to install global node packages.
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
