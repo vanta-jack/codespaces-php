@@ -8,14 +8,18 @@ MARIADB CONSOLE PASSWORD: password
 MARIADB DB CREDENTIALS: admin@cftgmbh.com password
 
 ## TO-DO
+- [ ] IN PROGRESS: Private Defense Contractor / Corporate Goth Bootstrap theme implementation
 - [x] A simple login page
   - [x] Basic email and password (MariaDB)
   - [ ] Liquid Glass setup
   - [ ] OAuth Implementation
-  - [ ] Sample Database for Blades in the Dark
-  - [ ] Material 3 Style
+  - [ ] Sample Database for school management software
   - [ ] Palantir/Crowdstrike aesthetic
   - [ ] Pill Navbar
+
+## REJECTED
+**Material 3 Implementation**
+Despite Material 3 making it look more modern and standard, I've determined it is more bloat to the purpose of this software.
 
 ### Database setup
 
